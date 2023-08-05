@@ -1,0 +1,17 @@
+/* <strong> element appears blue because it is a child of the paragraph property */
+p {
+    color: red;
+    border: 10px solid black;
+}
+
+/* if I didn't want inheritance for the <strong> i can set it to iniital, which makes it the default black */
+/* can force inheritance in example of border, obviously not usually wanted but its on display here */
+strong {
+    color: initial;
+    border: inherit;
+}
+
+/* properties that are usually inherited
+1. Font, font size, font color
+2. allignment and spacing
+3.  */
