@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+    /* universal selector, don't use it often, DOES NOT APPLY TO PSEUDO ELEMENTS */
+    box-sizing: border-box;
+}
+
+p {
+    padding: 0; /*vertical, horizontal*/
+    margin: 20px; /* IF YOU HAVE TWO MARGINS NEXT TO EACHOTHER, THEY COLLAPSE INTO EACHOTHER */
+    /* use margin to space, padding to only space from the border!!! */
+}
+
+/* sizing elements */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    /* for inline elements to respect width and height */
+    display: inline-block;
+}
+
+.box::before {
+    content: "hello";
+}

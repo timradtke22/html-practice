@@ -1,0 +1,24 @@
+/* this makes the default font size 10 for us */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 10px;
+}
+
+.box {
+    /* 50% of width of parent element */
+    /* for this case, body takes up width, so its 50% of total width */
+    /* all browsers give default font of 16px, there is no font size directly in this file so it will take browser default using em+ */
+    /* if we dont have default size to an element we have to trace up inheretance to figure out, so rem means x size of root element */
+    font-size: 20px;
+    width: 15rem;
+    /* default height of element is 0, height increases to fit content */
+    /* 100vh = 100% of height of viewport */
+    height: 100vh;
+    background-color: deeppink;
+    border-top: 10px solid orange;
+}
+
+/* unit you use depends on problem you are trying to solve! */

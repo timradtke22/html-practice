@@ -1,0 +1,14 @@
+.box {
+    border: 3px solid gold;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 200px;
+}
+.box-correct {
+    border: 3px solid gold;
+    width: 300px;
+    height: 300px;
+    /* scroll - auto - hidden, can also have an overflow x and overflow y */
+    /* also in overflow can do overflow: x y  */
+    overflow: hidden auto;
+}

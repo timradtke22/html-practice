@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Practice</title>
+    </head>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <style>
+        p {
+            color: grey;
+        }
+
+        #tim {
+            color: aqua;
+        }
+    </style>
+    <body>
+        <p style="color: chocolate; font-weight: bold">avoid inline styles</p>
+
+        <p>
+            style in the style markup takes precedence over the external
+            stylesheet
+        </p>
+        <p id="tim">
+            can also give identifiers and put them in the style or stylesheet to
+            make a specific element a certain way
+        </p>
+        <h2>Look into sanitize.css</h2>
+        <a href="https://google.com" target="_blank">google</a>
+
+        <!-- this is relational selectors -->
+
+        <section id="products">
+            <p>Hello</p>
+        </section>
+        <p>hi</p>
+
+        <!-- pseudoclass selectors -->
+
+        <article>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+                mollitia id in voluptatum, minima vel iure! Minus mollitia
+                accusantium consequuntur.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                quaerat odio, aut numquam unde libero excepturi labore. Sint,
+                modi alias?
+            </p>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+        </article>
+
+        <!-- pseudo-element selectors -->
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+            dolores praesentium, porro laboriosam, iusto, accusantium ex est hic
+            maxime nesciunt vitae sapiente illo alias explicabo libero sit!
+            Facilis consectetur veniam accusamus quidem voluptatem commodi iure,
+            sit dolor assumenda fuga accusantium corporis necessitatibus quia
+            deserunt excepturi debitis ut, deleniti quas? Culpa.
+        </p>
+    </body>
+
+    <body>
+        <article>
+            <h1 class="highlight" id="product">Heading</h1>
+        </article>
+    </body>
+</html>
