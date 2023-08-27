@@ -1,0 +1,44 @@
+.container {
+    display: grid;
+    /* want to create 3x2 */
+    /* rows / columns */
+    /* percentages tricky when working with grids, because its based on container and can possibly overflow */
+    /* we want to use free space, can use fr, fraction of the available space */
+    /* PREFER FRACTIONS WHEN SETTING SIZES OF ROWS AND COLUMNS */
+    grid-template: 200px auto 100px / 30fr 70fr;
+    /* period means empty cell */
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        ".       footer";
+    gap: 10px;
+    border: 3px solid lightgrey;
+    height: 100vh;
+    /* for grid we use justify-items rather than justify-content  default value is stretch, nothing happens when we put specific width and heights */
+    /* justify-items: stretch;
+    align-items: stretch; */
+    /* about aligning grid itself*/
+    /* justify-content: center;
+    align-content: center; */
+    /* for grid, content: grid itself, items: child items in grid */
+}
+
+.box {
+    /* width: 5rem;
+    height: 5rem; */
+    background-color: gold;
+}
+
+/* my favorite way is grid-area */
+.box:nth-of-type(1) {
+    /* by default each item takes 1 cell, to take multiple do 1 / to line of grid (not column) (or span)*/
+    /* grid-column: 1 / span 2; */
+    /* start / end */
+    /* row / column */
+    /* dont like not readable */
+    grid-area: header;
+}
+
+.box:nth-of-type(4) {
+    grid-area: footer;
+}

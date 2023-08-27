@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    /* mobile first approach, since things are likely to stack*/
+    flex-direction: column;
+}
+
+.box {
+    background: lightblue;
+    padding: 1rem;
+}
+
+.box:nth-of-type(2) {
+    background: dodgerblue;
+}
+
+/* type and (condition) */
+/* if true will overwrite previous rules */
+/* number of breakpoints depends on design, look at your design dumbass */
+/* media type can be screen or print, the print will apply for only printers */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .container {
+        flex-direction: row;
+    }
+}

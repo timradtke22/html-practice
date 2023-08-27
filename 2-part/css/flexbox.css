@@ -1,0 +1,37 @@
+.container {
+    /* this is a block level element but it will behave with flex box rules */
+    border: 3px solid lightgrey;
+    display: flex;
+    /* row is default value */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* set to force the container to adjust with flex */
+    height: 1000px;
+    /* without this, flexbox forces all elements on one line, this is to stop that */
+    /* flex-wrap: wrap; */
+    /* allows us to align multiple lines/the entire content as a whole */
+    /* align-content: center; */
+}
+
+.box {
+    /* auto means look at width, anything else means look at this for width, if flex is column it means height */
+    flex-basis: 15rem;
+    /* flex-grow: 1; */
+    width: 5rem;
+    height: 5rem;
+    background: gold;
+    margin: 1rem;
+}
+
+/* boxone */
+.box:nth-of-type(1) {
+    /* override parent align-items property */
+    align-self: flex-end;
+    /* since its 2 doesnt mean its twice as big */
+    /* flex-grow: 2; */
+    /* prevents the box from shrinking */
+    flex-shrink: 1;
+}
+
+/* regular property is flex -> flex: grow shrink basis */

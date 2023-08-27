@@ -1,0 +1,28 @@
+.avatar {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    /* allows subsequent elements to float to left around it */
+    /* can cause parent collapsing because floating makes it not viewable to parent*/
+    float: left;
+    margin-right: 1rem;
+}
+
+/* use to push an element below */
+.clear {
+    /* set clear to left because we have an element floated to the left, or both to make it easy*/
+
+    clear: both;
+}
+
+.tweet {
+    border: 3px solid lightgrey;
+}
+
+/* can also use overflow property instead, but not best way */
+.clearfix::after {
+    /* make a pseudoelement block level to essentially add div dynamically without polluiting markup */
+    content: "";
+    display: block;
+    clear: both;
+}

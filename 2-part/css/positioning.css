@@ -1,0 +1,42 @@
+/* body {
+    can use to observe that fixed stays on top
+    height: 200vh;
+} */
+
+.boxes {
+    border: 3px solid lightgrey;
+    /* if we want to position a box relative to a container, the container must be positioned relative */
+    position: relative;
+}
+
+.box {
+    width: 5rem;
+    height: 5rem;
+}
+
+.box-one {
+    background-color: gold;
+    /* by default position is static, which means not positioned, in normal position */
+    /* relative means relative to its normal position */
+    /* absolute means relative to the container it is in  */
+    position: absolute;
+    /* based on direction, you are ADDING SPACE in direction, not moving in that direction */
+    right: 0;
+    bottom: 0;
+    /* default is 0, if set positive it moves closer, negative is back, quant doesnt matter, the sign does*/
+    z-index: 1;
+}
+.box-two {
+    /* outside the container because fixed means relative to the viewport, a way to keep a navbar up top */
+    position: fixed;
+    top: 0;
+    right: 2rem;
+    left: 2rem;
+    width: auto;
+    background-color: lightblue;
+}
+.box-three {
+    background-color: pink;
+}
+
+/* when you absolutely position an element, its like on another layer like it doesn't exist. IF YOU ABSOLUTELY POSITION, YOU MUST HAVE THE CONTAINER ITSELF RELATIVE POSITIONED */
