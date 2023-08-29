@@ -1,0 +1,22 @@
+/* in the download from fontsquirrel it gives us some css for our downloaded fonts */
+
+/* must be at top so we can use in the stylesheet */
+@font-face {
+    font-family: "open_sansbold";
+    src: url("font/open-sans/opensans-bold-webfont.woff2") format("woff2"),
+        url("font/open-sans/opensans-bold-webfont.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "opensans";
+    src: url("font/open-sans/opensans-regular-webfont.woff2") format("woff2"),
+        url("font/open-sans/opensans-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.custom {
+    font-family: "open_sansbold";
+}
